@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup AYUSH Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- chatbot -->
+    <link rel="stylesheet" href="styleCB.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="script.js" defer></script>
+    <!-- chatbot -->
+
+    <style>
+        /* CSS styles for the index.html page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #adb5bd;
+
+        }
+
+        .left-photo {
+            float: left;
+            margin-right: 20px;
+        }
+        body {
+            background-image: url(home.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Add your custom CSS styles here */
+        
+        .hero-section {
+            background-image: url('path/to/your/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .hero-section h1 {
+            position: centre;
+            color: rgb(201, 135, 12);
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-section h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: rgb(229, 149, 63);
+        }
+        
+        .hero-section p {
+            position:centre;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .cta-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        nav {
+            background-color:rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* New styles for the chatbot button */
+         .chatbot-button {
+            position: fixed;
+            bottom: 30px;
+            right: 35px;
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: greenyellow;
+            transition: all 0.2s ease;
+        }
+
+        .chatbot-button span {
+            color: #fff;
+            position: absolute;
+        }
+
+        .chatbot-button span:last-child,
+        body.show-chatbot .chatbot-button span:first-child  {
+            opacity: 0;
+        }
+
+        body.show-chatbot .chatbot-button span:last-child {
+            opacity: 1;
+        }
+  
+  
+    </style>
+</head>
+<body>
+    <!-- <nav id="navbar" class="navbar justify-content-center navbar-expand-sm order-last order-lg-0">
+    <ul class="justify-content-center">…</ul>
+    <i class="SizeInc SizeDec bi bi-list mobile-nav-toggle">…</i> -->
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- <img src="frontpage2.png" alt="Photo" class="left-photo"> -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Startup AYUSH Portal</h1>
+        <h3>स्टार्टअप आयुष पोर्टल् इत्यत्र स्वागतम्।</h3>
+        <p>Your one-stop platform for all stakeholders in the AYUSH system.</p>
+        <a href="login.html" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Rest of your website content goes here -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Startup AYUSH Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- chatbot -->
+    
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <!-- <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span> -->
+      <div class="chatbot">
+        <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br>How can I help you today?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+    <!-- chatbot -->
+</body>
+</html>

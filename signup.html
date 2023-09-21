@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup AYUSH Portal - Signup</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* CSS styles for the signup.html page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url(home.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Add your custom CSS styles here */
+        
+        .signup-section {
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .signup-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .signup-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .signup-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .signup-form input {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 200px;
+        }
+        
+        .signup-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .signup-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* code sample 2 */
+        .signup-section {
+            /* background-color: #f2f2f2; Gray background color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+            max-width: 400px;
+            margin: 0 auto;
+            font-size: 16px; /* Adjust the font size as needed */
+            padding: 20px; /* Adjust the padding as needed */
+            margin-top: 30px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- Signup Section -->
+    <section class="signup-section">
+        <h2>Signup</h2>
+        
+        <div class="signup-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rest of your website content goes here -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Startup AYUSH Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

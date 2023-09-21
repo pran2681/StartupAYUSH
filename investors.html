@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investors - Startup AYUSH Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(SBG.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Investors Content */
+        .investor-section {
+            padding: 50px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, p {
+            color: wheat;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        /* Investor Registration Form */
+        form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #555;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* List of Investors */
+        .investor-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .investor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .investor-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .investor-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .investor-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .investor-card a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- Investors Content -->
+    <div class="investor-section">
+        <h1>Welcome Investors</h1>
+        <p>Register as an investor and explore investment opportunities.</p>
+
+        <!-- Investor Registration Form -->
+        <h2>Register as an Investor</h2>
+        <form>
+            <label for="name">Investor Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <input type="submit" value="Register">
+        </form>
+
+        <!-- List of Investors -->
+        <h2>Investment Opportunities</h2>
+        
+        <div class="investor-card">
+            <h3>Investor Name 1</h3>
+            <p>Investment Focus: AYUSH Startups</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Learn More</a>
+        </div>
+        
+        <div class="investor-card">
+            <h3>Investor Name 2</h3>
+            <p>Investment Focus: Health & Wellness</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <!-- Add more investor cards as needed -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2023 Startup AYUSH Portal</p>
+    </footer>
+</body>
+</html>

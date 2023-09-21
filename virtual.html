@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup AYUSH Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* CSS styles for the login.html page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url(virtual.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cta-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        /* Add your custom CSS styles here */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.video-container {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+}
+
+.chat-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 300px;
+}
+
+.chat-messages {
+    overflow-y: scroll;
+    height: 220px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        img {
+            max-width: 100%; /* Make sure the image doesn't exceed its original size */
+            max-height: 100%; /* Make sure the image doesn't exceed its original size */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <div class="container">
+        <!-- Video Support Section -->
+        <div class="box video-support">
+            <h1>Video Support</h1>
+            <div class="Photo">
+                <img src="zoom.jpg" alt="Zoom">
+            </div>
+            <a href="zoom.html" class="cta-button">Zoom meeting</a>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="box chat">
+            <h1>Chat</h1>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Chat messages will be displayed here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Rest of your website content goes here -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Startup AYUSH Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            const messageInput = document.getElementById('message-input');
+            const sendButton = document.getElementById('send-button');
+            const chatMessages = document.getElementById('chat-messages');
+
+            sendButton.addEventListener('click', () => {
+                const message = messageInput.value.trim();
+                if (message !== '') {
+                    // Create a new message element
+                    const messageElement = document.createElement('div');
+                    messageElement.className = 'message';
+                    messageElement.textContent = message;
+
+                    // Append the message to the chat messages area
+                    chatMessages.appendChild(messageElement);
+
+                    // Clear the input field
+                    messageInput.value = '';
+
+                    // Scroll to the bottom of the chat messages
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            });
+        });
+
+    </script> -->
+</body>
+</html>

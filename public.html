@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup AYUSH Portal - Public Users</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        /* CSS styles for the public.html page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(SBG.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Add your custom CSS styles here */
+        
+        .public-section {
+            padding: 50px;
+            text-align: center;
+            color:wheat;
+        }
+        
+        .public-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .public-section p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            color: wheat;
+        }
+        
+        .public-section a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        
+        .public-section a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- Public Users Section -->
+    <section class="public-section">
+        <h2>Public Users</h2>
+        <p>Welcome to the Public Users section of the Startup AYUSH Portal. Here, you can explore information and resources related to AYUSH practices and connect with other users interested in the field.</p>
+        <a href="#">Join the Community</a>
+    </section>
+
+    <!-- Rest of your website content goes here -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Startup AYUSH Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

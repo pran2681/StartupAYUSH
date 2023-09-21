@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup AYUSH Portal - Startups</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            background-image: url(SBG.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Startups Section */
+        h1, h2, p {
+            text-align: center;
+            color: wheat;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+
+        p{
+            font-size: 24px;
+        }
+
+        .agencies-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .agencies-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color:wheat; /* Text color for the section heading */
+        }
+
+        .agency-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #fff; /* Card background color */
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
+        }
+
+        .agency-card:hover {
+            transform: translateY(-5px); /* Lift the card on hover */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+        }
+
+        .agency-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333; /* Text color for card headings */
+        }
+
+        .agency-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #666; /* Text color for card content */
+        }
+
+        .agency-card a {
+            text-decoration: none;
+            color: #4CAF50; /* Link color */
+            transition: color 0.2s; /* Color transition on hover */
+        }
+
+        .agency-card a:hover {
+            color: #f44336; /* Adjusted link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    
+
+    
+    <section class="agencies-section">
+        <h2>Government Agencies</h2>
+
+        <div class="agency-card">
+            <h3>Agency Name 1</h3>
+            <p>Location: City, Country</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="agency-card">
+            <h3>Agency Name 2</h3>
+            <p>Location: City, Country</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <!-- Add more agency cards as needed -->
+
+    </section>
+</body>
+</html>

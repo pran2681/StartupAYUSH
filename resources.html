@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup AYUSH Portal - Resources</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        /* CSS styles for the resources.html page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(SBG.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h2{
+            color: wheat;
+        }
+        
+        /* Add your custom CSS styles here */
+        
+        .resources-section {
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .resources-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .resource-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform: scale(1);
+        }
+        .resource-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .resource-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .resource-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .resource-card a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <h2>Resources</h2>
+        
+        <div class="resource-card">
+            <h3>Guide to AYUSH Practices</h3>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Download</a>
+        </div>
+        
+        <div class="resource-card">
+            <h3>Funding Options for AYUSH Startups</h3>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Download</a>
+        </div>
+        
+        <!-- Add more resource cards as needed -->
+        
+    </section>
+
+    <!-- Rest of your website content goes here -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Startup AYUSH Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

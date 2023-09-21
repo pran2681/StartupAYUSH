@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup AYUSH Portal - Startups</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            background-image: url(SBG.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Startups Section */
+        h1, h2, p {
+            text-align: center;
+            color: wheat;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+
+        p{
+            font-size: 24px;
+        }
+
+        .startups-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .startup-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform: scale(1);
+        }
+
+        .startup-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .startup-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #4CAF50;
+            transition: color 0.3s ease;
+        }
+
+        .startup-card:hover h3 {
+            color: #45a049;
+        }
+
+        .startup-card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .startup-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .startup-card a:hover {
+            color: #45a049;
+        }
+
+        /* Startups Registration Form */
+        form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform: scale(1);
+        }
+
+        form:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #555;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- Startups Section -->
+    <h1>Welcome Startups</h1>
+    <p>Register your Startups and explore investment opportunities.</p>
+
+    <!-- Startups Registration Form -->
+    <section class="startups-section">
+        <h2 style="font-size: 36px; margin-bottom: 20px;">Register your Startups</h2>
+        <form>
+            <label for="name">Startup Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- AYUSH Startups -->
+    <section class="startups-section">
+        <h2 style="font-size: 36px; margin-bottom: 30px;">AYUSH Startups</h2>
+        
+        <div class="startup-card">
+            <h3>Startup Name 1</h3>
+            <p>Industry: Health & Wellness</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Learn More</a>
+        </div>
+        
+        <div class="startup-card">
+            <h3>Startup Name 2</h3>
+            <p>Industry: Ayurvedic Products</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet ultrices, nunc nunc tincidunt urna, id lacinia nunc nisl id nunc.</p>
+            <a href="#">Learn More</a>
+        </div>
+        
+        <!-- Add more startup cards as needed -->
+        
+    </section>
+</body>
+</html>

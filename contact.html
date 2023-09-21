@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup AYUSH Portal - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add a background color to the body */
+        body{
+            background-image: url(contact.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        /* Improved CSS styles for the contact.html page */
+        .contact-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Cover the entire page with the contact box */
+        .contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-box-inner {
+    /* background-color: rgba(255, 255, 255, 0.7); Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); /* Improved shadow effect */
+    max-width: 800px; /* Increased max-width for a wider box */
+    width: 100%;
+    border-radius: 50px;
+
+    /* Apply blur effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Uncomment these lines if you want to add a background image */
+    /*
+    background-image: url(SBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+
+
+        .contact-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4CAF50; /* Green title color */
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold; /* Make input labels bold */
+            color: #333; /* Label color */
+        }
+
+        /* Two-column layout */
+        .contact-form .input-field {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .contact-form .input-field label {
+            flex-basis: 48%;
+        }
+
+        .contact-form .input-field input,
+        .contact-form .input-field select {
+            flex-basis: 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            font-weight: bold; /* Make input fields bold */
+        }
+
+        .contact-form .input-field input:focus,
+        .contact-form .input-field select:focus {
+            border-color: #4CAF50; /* Change border color on focus */
+        }
+
+        /* Big textarea for "How may we assist you?" */
+        .contact-form .textarea-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            font-weight: bold; /* Make textarea bold */
+        }
+
+        .contact-form .textarea-field:focus {
+            border-color: #4CAF50; /* Change border color on focus */
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #333; /* Dark background color */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff; /* White link color */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px; /* Decreased footer padding */
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        /* Style for the country selection dropdown */
+        .input-field select {
+            flex-basis: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            font-weight: bold; /* Make input fields bold */
+            /* Apply color palette styles */
+            background-color: #fff; /* Background color */
+            color: #333; /* Text color */
+        }
+
+        .input-field select:focus {
+            border-color: #4CAF50;
+            /* Add a subtle box-shadow on focus for better visual feedback */
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
+        }
+        h2{
+            text-align: center;
+        }
+
+        /* Style for the submit button */
+.contact-form button[type="submit"] {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 12px 20px; /* Padding for better visual appearance */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+iframe{
+            /* filter: invert(30%); */
+            border: 1px;
+            box-shadow: 2px 4px #888888;
+        }
+
+        nav {
+            background-color:rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }nav {
+            background-color:rgb(17, 53, 17);
+            text-align: right; /* Align to the right */
+            padding: 15px 20px; /* Increased padding */
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1fa00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <div class="dropdown">
+            <a href="#">Stake Holders</a> |
+            <div class="dropdown-content">
+                <a href="startups.html">Startups</a> 
+                <a href="investors.html">Investors</a> 
+                <a href="incubators.html">Incubators & Accelerators</a> |
+                <a href="agencies.html">Government Agencies</a> 
+                <a href="public.html">Public Users</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Community</a> |
+            <div class="dropdown-content">
+                <a href="virtual.html">Virtual connection</a> 
+                <a href="mentorship.html">mentorship</a> 
+                <a href="#">Explore</a> 
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Support</a> |
+            <div class="dropdown-content">
+                <a href="resources.html">Resources</a>
+                <a href="guidance.html">Guidence</a>  
+            </div>
+        </div>
+        
+        
+        <a href="contact.html">Contact Us</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="contact-box">
+            <div class="contact-box-inner">
+                <h2>Contact Us</h2>
+                <div class="contact-form">
+                    <form>
+                        <!-- First Name and Last Name in a single line -->
+                        <div class="input-field">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Enter your First Name">
+                        </div>
+                        <div class="input-field">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Enter your Last Name">
+                        </div>
+                        
+                        <!-- Email and Company in the same line -->
+                        <div class="input-field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your Email">
+                        </div>
+                        <div class="input-field">
+                            <label for="company">Company:</label>
+                            <input type="text" id="company" name="company" required placeholder="Enter your Company">
+                        </div>
+                        
+                        <!-- Country Selection -->
+                        <!-- Country Selection -->
+<div class="input-field">
+    <label for="country">Select your country:</label>
+    <select id="country" name="country" required>
+        <option value="Select your country">Select your country</option>
+        <option value="India">India</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="The Bahamas">The Bahamas</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Benin">Benin</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Brunei">Brunei</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cabo Verde">Cabo Verde</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+        <option value="Congo, Republic of the">Congo, Republic of the</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Côte d’Ivoire">Côte d’Ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominica">Dominica</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="East Timor (Timor-Leste)">East Timor (Timor-Leste)</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Eswatini">Eswatini</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="Gabon">Gabon</option>
+        <option value="The Gambia">The Gambia</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Greece">Greece</option>
+        <option value="Grenada">Grenada</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Guinea-Bissau">Guinea-Bissau</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran">Iran</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kiribati">Kiribati</option>
+        <option value="Korea, North">Korea, North</option>
+        <option value="Korea, South">Korea, South</option>
+        <option value="Kosovo">Kosovo</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyzstan">Kyrgyzstan</option>
+        <option value="Laos">Laos</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Libya">Libya</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Marshall Islands">Marshall Islands</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+        <option value="Moldova">Moldova</option>
+        <option value="Monaco">Monaco</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Myanmar (Burma)">Myanmar (Burma)</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nauru">Nauru</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="North Macedonia">North Macedonia</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Palau">Palau</option>
+        <option value="Panama">Panama</option>
+        <option value="Papua New Guinea">Papua New Guinea</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Romania">Romania</option>
+        <option value="Russia">Russia</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+        <option value="Samoa">Samoa</option>
+        <option value="San Marino">San Marino</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Solomon Islands">Solomon Islands</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Sudan, South">Sudan, South</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Syria">Syria</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Togo">Togo</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Tuvalu">Tuvalu</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Vanuatu">Vanuatu</option>
+        <option value="Vatican City">Vatican City</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+</div>
+
+                        
+                        <!-- Big textarea for "How may we assist you?" -->
+                        <label for="assistance">How may we assist you?</label>
+                        <textarea id="assistance" name="assistance" rows="5" class="textarea-field" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2>Our Location</h2>
+    <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14015.40663069606!2d77.2138473!3d28.5742169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce261a70c4d75%3A0x9b665605f37a7ef8!2sAyush%20Bhavan!5e0!3m2!1sen!2sin!4v1695192923144!5m2!1sen!2sin" width="300" height="300" style="border: 30%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14016.036620421673!2d77.215156!3d28.5694878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce37f9b78cfab%3A0x43a8a7bbaf255d27!2sAYUSH%20NBCC%20Office!5e0!3m2!1sen!2sin!4v1695193022757!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </p>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin: 0;">&copy; 2023 Startup AYUSH Portal. All rights reserved.</p> <!-- Adjusted footer height -->
+    </footer>
+</body>
+</html>
